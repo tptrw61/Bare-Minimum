@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stamina : MonoBehaviour
 {
-    public bool DEBUG = true;
+    public bool DEBUG = false;
 
     private Vector3 prevPos;
 
@@ -37,11 +37,11 @@ public class Stamina : MonoBehaviour
         //DEBUG ONLY
         if (DEBUG)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.Plus))
                     increaseStress();
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetKeyDown(KeyCode.Minus))
                 stressCurrent--;
-            if (Input.GetMouseButtonDown(2))
+            if (Input.GetKeyDown(KeyCode.Asterisk))
             {
                 staminaCurrent = staminaMax;
                 stressCurrent = 0;
@@ -64,13 +64,32 @@ public class Stamina : MonoBehaviour
         }
     }
 
-    public bool increaseStress()
+    public void useStamina(float used)
+    {
+        staminaCurrent -= used;
+    }
+    public void restoreStamina(float restored)
+    {
+        staminaCurrent += restored;
+    }
+
+    public void increaseStress()
     {
         stressCurrent++;
-        return stressCurrent > stressMax;
     }
-    public bool isStressedOut()
+    public void decreaseStress()
+    {
+        stressCurrent--;
+        if (stressCurrent < 0)
+            stressCurrent = 0;
+    }
+
+    public bool looseByStress()
     {
         return stressCurrent > stressMax;
+    }
+    public bool looseByStamina()
+    {
+        return staminaCurrent <= 0;
     }
 }
