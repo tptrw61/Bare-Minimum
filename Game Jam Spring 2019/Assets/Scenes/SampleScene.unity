@@ -404,8 +404,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   margin: 0.05
-  leftBound: -0.4
-  rightBound: -2.7
+  rightBound: -6.65
+  leftBound: 3.26
   speed: 8
 --- !u!20 &519420031
 Camera:
