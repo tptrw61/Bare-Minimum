@@ -6,7 +6,7 @@ public class CenterText : MonoBehaviour
 {
     public GameObject myCamera;
     public float distance = 5.0f;
-    public float speed;
+    public float speed = 40;
 
     void Update()
     {
