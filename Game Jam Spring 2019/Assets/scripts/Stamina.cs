@@ -76,6 +76,8 @@ public class Stamina : MonoBehaviour
     public void increaseStress()
     {
         stressCurrent++;
+        if (stressCurrent > 4)
+            stressCurrent = 4;
     }
     public void decreaseStress()
     {
