@@ -84,17 +84,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -102,18 +91,18 @@ TextureImporter:
       name: coffee_mug_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 64
+        width: 51
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575a7221dfe7b404db0937afef724f05
+      spriteID: 9252919b201e2894cbc474cae48475c2
       vertices: []
       indices: 
       edges: []
@@ -122,18 +111,18 @@ TextureImporter:
       name: coffee_mug_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 70
         y: 0
-        width: 64
+        width: 51
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a796b2359752fc4aaaffc0aaa62b1c7
+      spriteID: 3710e3d504d551c48a6e8cc80ee4c968
       vertices: []
       indices: 
       edges: []
@@ -142,18 +131,18 @@ TextureImporter:
       name: coffee_mug_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 134
         y: 0
-        width: 64
+        width: 51
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475106790185c5047b61f46f36b7d1b0
+      spriteID: f5cbc511edd7512438123b0ac2043b62
       vertices: []
       indices: 
       edges: []
@@ -162,18 +151,18 @@ TextureImporter:
       name: coffee_mug_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 198
         y: 0
-        width: 64
+        width: 51
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31842798b2158e4f8ef4addf06c559e
+      spriteID: 7a1506c8c25ce454aa0e7c81501d36bc
       vertices: []
       indices: 
       edges: []
