@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: d4a50b13e634b40e08d04b330bec2851
+guid: 8faeb2aec140f624f98ac71c55df3139
 TextureImporter:
   fileIDToRecycleName:
-    21300000: coffee_mug_0
-    21300002: coffee_mug_1
-    21300004: coffee_mug_2
-    21300006: coffee_mug_3
+    21300000: stressbar_0
+    21300002: stressbar_1
+    21300004: stressbar_2
+    21300006: stressbar_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -99,81 +99,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coffee_mug_0
+      name: stressbar_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 64
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575a7221dfe7b404db0937afef724f05
+      spriteID: ffa5289fe98083f4286b840772e8e150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coffee_mug_1
+      name: stressbar_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 64
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a796b2359752fc4aaaffc0aaa62b1c7
+      spriteID: 73e54670ac0f52840b960b27cccdb18d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coffee_mug_2
+      name: stressbar_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
-        height: 64
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475106790185c5047b61f46f36b7d1b0
+      spriteID: 8deef330d8961b3449ab117594fd66d2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coffee_mug_3
+      name: stressbar_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
-        height: 64
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31842798b2158e4f8ef4addf06c559e
+      spriteID: ebae93a7383ceee4ba532f77425b6096
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8677c282b216c462c96039b2b10a2db8
+    spriteID: a4f26b7f99b2e2343b8677ff1d760e74
     vertices: []
     indices: 
     edges: []
