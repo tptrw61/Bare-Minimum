@@ -14,7 +14,6 @@ public class Transform : MonoBehaviour
     void Start()
     {
         this.transform.position = Vector3.left * distance;
-        Show();
     }
 
     void Show()
