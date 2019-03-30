@@ -6,8 +6,8 @@ public class MoveCamera : MonoBehaviour
 {
 
     public float margin = 0.05f;
-    public float leftBound = 0;
     public float rightBound = 0;
+    public float leftBound = 0;
     public float speed = 1.0f;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class MoveCamera : MonoBehaviour
     {
         float normalizedMouseX = Input.mousePosition.x / Screen.width;
 
-        //movement left
+        //movement right
         if (transform.position.x < leftBound)
         {
             if(normalizedMouseX > margin)
@@ -29,7 +29,7 @@ public class MoveCamera : MonoBehaviour
             }
         }
 
-        //movement right
+        //movement left
         if (transform.position.x > rightBound)
         {
             if (normalizedMouseX < 1-margin)
