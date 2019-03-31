@@ -11,6 +11,7 @@ public class ComputerInteract : MonoBehaviour
     public fax_interact fax;
     public AudioSource beep;
     public bool trigger;
+    public WebpageInteract page;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class ComputerInteract : MonoBehaviour
     void OnMouseDown()
     {
         beep.Play();
+        page.Show();
         stamina.decreaseStress();
         fax.working = false;
         float x = Random.Range(0.0f, 5.0f);
