@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Transform : MonoBehaviour
+public class MoveBoss : MonoBehaviour
 {
     private Vector3 targetpos;
     public float distance;
