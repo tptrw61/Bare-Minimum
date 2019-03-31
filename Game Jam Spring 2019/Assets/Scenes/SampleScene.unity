@@ -298,8 +298,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f025333412658694aad2a5908059ee04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetpos: {x: 0, y: 0, z: 0}
   distance: 5
   speed: 2
+  showing: 0
 --- !u!212 &340898643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -467,7 +469,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 347231004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e84d50b2393a9d44b001b0bb02352b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 46245bd98fd954d44b9854cd1aae11e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
