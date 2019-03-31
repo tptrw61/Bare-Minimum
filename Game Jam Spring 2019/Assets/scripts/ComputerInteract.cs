@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Yarn.Unity;
 
 public class ComputerInteract : MonoBehaviour
 {
 
-   public DialogueRunner run;
-   //private int count =0;
+   public Canvas c;
 
     public AudioSource beep;
 
@@ -15,13 +13,14 @@ public class ComputerInteract : MonoBehaviour
     void Start()
     {
         beep = GetComponent<AudioSource>();
+        c= GetComponent<Canvas>();
     }
     // Start is called before the first frame update
     // Update is called once per frame
     void OnMouseDown()
     {
         beep.Play();
-        run.StartDialogue();
+        c.enabled=true;
     }
 
     // Update is called once per frame
