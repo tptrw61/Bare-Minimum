@@ -20,7 +20,6 @@ public class ComputerInteract : MonoBehaviour
     {
         beep.Play();
         canvasObject.gameObject.SetActive(true);
-        ;
     }
 
     // Update is called once per frame
