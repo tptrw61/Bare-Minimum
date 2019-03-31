@@ -472,14 +472,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff26b888f6f4af4aaa486a822bf157c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialoguePanel: {fileID: 0}
+  DialoguePanel: {fileID: 224038241265953696}
   Speaker: {fileID: 114597344850062822}
   Dialogue: {fileID: 114095067141968952}
   ChoiceTexts:
   - {fileID: 114162163060827398}
   - {fileID: 114003119585381232}
   - {fileID: 114045005442198104}
-  ChoicePanel: {fileID: 0}
+  ChoicePanel: {fileID: 224476799084564026}
   CrawlTime: 0.025
 --- !u!114 &114564140449054580
 MonoBehaviour:

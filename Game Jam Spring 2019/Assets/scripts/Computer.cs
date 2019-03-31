@@ -1,22 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Computer : MonoBehaviour
 {
+    public BoxCollider2D box;
+    public DialogueRunner run;
+    private int count =0;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-        if (Input.GetButtonDown(0))
-        {
-            Vector3 pos = Input.mousePosition;
-            if()
-        }
+        //if (count < (run.sourceText.Length)) count++;
+        run.StartDialogue();
     }
 }

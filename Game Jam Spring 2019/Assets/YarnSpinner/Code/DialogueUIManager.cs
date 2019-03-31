@@ -8,11 +8,11 @@ using System.Text.RegularExpressions;
 public class DialogueUIManager : Yarn.Unity.DialogueUIBehaviour
 {
     // Unity Editor accessible fields
-    public Transform DialoguePanel;
+    public RectTransform DialoguePanel;
     public TextMeshProUGUI Speaker;
     public TextMeshProUGUI Dialogue;
     public TextMeshProUGUI[] ChoiceTexts;
-    public Transform ChoicePanel;
+    public RectTransform ChoicePanel;
     public float CrawlTime;
 
     // Delegate passed in to handle selecting options and branching dialogue.
