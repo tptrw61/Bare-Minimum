@@ -9,6 +9,7 @@ public class MoveBoss : MonoBehaviour
     public AudioSource footsteps;
     public fax_interact fax;
     public DialogueRunner dialouge;
+    public ComputerInteract computer;
     public float distance;
     public float time;
     public float speed;
@@ -46,6 +47,7 @@ public class MoveBoss : MonoBehaviour
         if(showing && Vector3.Distance(transform.position, targetpos)<= 0.1f && !dialouge.isDialogueRunning)
         {
             Hide();
+            computer.trigger = false;
         }
     }
     
