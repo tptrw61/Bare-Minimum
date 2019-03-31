@@ -1,0 +1,24 @@
+:: Start
+I like spaghetti
+
+[[yummy_yummy]]
+[[ew]]
+
+
+:: ew
+gTF out of here!
+
+[[stab]]
+
+
+:: stab
+you murdered a person, I hope that in all of your violent attempts the only thing you have broken was my heart.
+
+
+:: StoryTitle
+Untitled Story
+
+
+:: yummy_yummy
+I am glad you like spaghetti
+
