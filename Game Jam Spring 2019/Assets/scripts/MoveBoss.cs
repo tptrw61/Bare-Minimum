@@ -16,7 +16,7 @@ public class Transform : MonoBehaviour
         this.transform.position = Vector3.left * distance;
     }
 
-    void Show()
+    public void Show()
     {
         this.targetpos = new Vector3(8.6f, .5f, 0f);
     }
@@ -35,7 +35,7 @@ public class Transform : MonoBehaviour
 
     }
 
-    void Hide()
+    public void Hide()
     {
         this.targetpos = new Vector3(2.6f, .5f, 0f);
     }
