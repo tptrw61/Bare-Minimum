@@ -22,6 +22,5 @@ public class fax_interact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 }
