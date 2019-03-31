@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StressBar : MonoBehaviour
+public class StaminaBar : MonoBehaviour
 {
 
-    public Sprite[] sprites = new Sprite[4];
+    public Sprite[] sprites;
     private SpriteRenderer sr;
 
     Stamina stamina;
@@ -13,13 +13,18 @@ public class StressBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stamina = this.gameObject.GetComponent<Stamina>();
         sr = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        sr.sprite = sprites[stamina.stressCurrent == 4 ? 3 : stamina.stressCurrent];
+        sr.sprite = sprites[getSpriteIndex()];
+    }
+
+    private int getSpriteIndex()
+    {
+        //use this to figure out the correct sprite's index
+        return 0;
     }
 }

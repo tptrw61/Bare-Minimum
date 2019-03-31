@@ -10,7 +10,7 @@ public class Stamina : MonoBehaviour
 
     public float staminaDrain = 1f, stressDrain = 1f;
 
-    public float staminaMax = 3000f;
+    public float staminaMax = 9000f;
     public float staminaCurrent;
 
     public int stressMax = 3;
@@ -33,8 +33,6 @@ public class Stamina : MonoBehaviour
     {
         Vector3 curPos = Input.mousePosition;
         staminaCurrent -= (Vector3.Distance(curPos, prevPos)*staminaDrain) + (stressDrain*Time.deltaTime*stressCurrent);
-        if (staminaCurrent < 0)
-            staminaCurrent = 0;
         prevPos = curPos;
         //DEBUG ONLY
         if (DEBUG)
@@ -54,7 +52,9 @@ public class Stamina : MonoBehaviour
             stressed = false;
         if (staminaCurrent >= 0)
             tired = false;
-        if(stressCurrent > stressMax && !stressed)
+        if (staminaCurrent < 0)
+            staminaCurrent = 0;
+        if (stressCurrent > stressMax && !stressed)
         {
             stressed = true;
             Debug.Log("Stressed Out");
