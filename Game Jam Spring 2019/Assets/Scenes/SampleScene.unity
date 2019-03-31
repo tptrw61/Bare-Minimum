@@ -1170,6 +1170,7 @@ GameObject:
   - component: {fileID: 721532583}
   - component: {fileID: 721532582}
   - component: {fileID: 721532584}
+  - component: {fileID: 721532585}
   m_Layer: 0
   m_Name: staminabar_0
   m_TagString: Untagged
@@ -1254,6 +1255,28 @@ MonoBehaviour:
   myCamera: {fileID: 519420028}
   distance: 5
   speed: 40
+--- !u!114 &721532585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721532581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4aef8f4b82c390488d524968b84f7aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300002, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300004, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300006, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300008, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300010, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300012, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  - {fileID: 21300014, guid: 0e535cbc05635814682137410a4e55ee, type: 3}
+  stamina: {fileID: 1829293966}
 --- !u!1 &836688122
 GameObject:
   m_ObjectHideFlags: 0
