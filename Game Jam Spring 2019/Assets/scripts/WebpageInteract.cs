@@ -8,14 +8,10 @@ public class WebpageInteract : MonoBehaviour
     public float distance;
     public AudioSource beep;
 
-    private SpriteRenderer sr;
-    public Sprite[] sprites = new Sprite[2];
-
     public float speed;
     // Start is called before the first frame update
     void Start()
     {
-        sr = this.gameObject.GetComponent<SpriteRenderer>();
         this.transform.position = Vector3.down * distance;
         Hide();
     }
