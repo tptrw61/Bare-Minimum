@@ -979,7 +979,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 07ac2ff3d5f154c7f9c2a3fa65e9860f, type: 3}
   - {fileID: 21300000, guid: 029ff2400a81f450e84d30cfaf63d089, type: 3}
-  speed: 2
+  speed: 4
 --- !u!212 &836688126
 SpriteRenderer:
   m_ObjectHideFlags: 0
