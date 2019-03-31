@@ -8,23 +8,21 @@ public class Paper_Interact : MonoBehaviour
     public float distance;
     public AudioSource stamp;
 
-    //Image m_Image;
-   // public Sprite stamped;
-    //public Sprite clean;
+    private SpriteRenderer sr;
+    public Sprite[] sprites = new Sprite[2];
 
     public float speed;
     // Start is called before the first frame update
     void Start()
     {
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
         this.transform.position = Vector3.down * distance;
-       // m_Image = clean;
         Hide();
-        Show();
     }
 
     public void Show()
     {
-        //m_Image = clean;
+        sr.sprite = sprites[0];
         this.targetpos = new Vector3(-2.9f, .02f, 0f);
 
     }
@@ -32,7 +30,7 @@ public class Paper_Interact : MonoBehaviour
     void OnMouseDown()
     {
         stamp.Play();
-        //m_Image.sprite = m_Sprite;
+        sr.sprite = sprites[1];
         Hide();
     }
 

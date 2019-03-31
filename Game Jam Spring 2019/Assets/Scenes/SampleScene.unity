@@ -267,7 +267,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: ed68005d991714a12b0829977eb868e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -850,8 +850,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 0e9255ffbfa4b664e92348e3e65d3cb2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -974,7 +974,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13405c68644155248a3b20007c5379ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0
+  distance: 10
+  stamp: {fileID: 836688123}
+  sprites:
+  - {fileID: 21300000, guid: 07ac2ff3d5f154c7f9c2a3fa65e9860f, type: 3}
+  - {fileID: 21300000, guid: 029ff2400a81f450e84d30cfaf63d089, type: 3}
   speed: 2
 --- !u!212 &836688126
 SpriteRenderer:
@@ -1012,7 +1016,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 07ac2ff3d5f154c7f9c2a3fa65e9860f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1452,6 +1456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   printer: {fileID: 1814425967}
   print: {fileID: 1814425969}
+  paper: {fileID: 836688125}
 --- !u!82 &1814425969
 AudioSource:
   m_ObjectHideFlags: 0

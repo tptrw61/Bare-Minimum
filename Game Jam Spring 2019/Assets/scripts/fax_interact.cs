@@ -8,6 +8,8 @@ public class fax_interact : MonoBehaviour
     public Animator printer;
     public AudioSource print;
 
+    public Paper_Interact paper;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,7 @@ public class fax_interact : MonoBehaviour
     {
         print.Play();
         printer.Play("");
+        paper.Show();
     }
 
     // Update is called once per frame
