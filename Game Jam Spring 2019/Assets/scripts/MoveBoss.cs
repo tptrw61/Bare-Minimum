@@ -5,9 +5,13 @@ using UnityEngine;
 public class MoveBoss : MonoBehaviour
 {
     private Vector3 targetpos;
+    public AudioSource footsteps;
+    public fax_interact fax;
     public float distance;
-
+    public float time;
     public float speed;
+    public Stamina stress;
+    
     private bool showing = false;
     
     // Start is called before the first frame update
@@ -19,6 +23,10 @@ public class MoveBoss : MonoBehaviour
     public void Show()
     {
         this.targetpos = new Vector3(8.6f, .5f, 0f);
+        if (!fax.working)
+        {
+            stress.increaseStress();
+        }
     }
 
     private void Update()
@@ -33,6 +41,19 @@ public class MoveBoss : MonoBehaviour
     private void showDialogue()
     {
 
+    }
+    
+    public IEnumerator TimerSound(float time)
+    {
+        yield return new WaitForSeconds(time-5);
+        footsteps.Play();
+        StartCoroutine(TimerBoss(5));
+    }
+
+    private IEnumerator TimerBoss(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Show();
     }
 
     public void Hide()
