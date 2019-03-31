@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RetryButton : MonoBehaviour
-{
-    void OnClick()
+{ 
+    public void clicked()
     {
-        SceneManager.loadScene(0);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

@@ -68,7 +68,7 @@ public class Stamina : MonoBehaviour
         }
         if ((tired || stressed) && USE_GAME_OVER)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
     }
     public void useStamina(float used)
