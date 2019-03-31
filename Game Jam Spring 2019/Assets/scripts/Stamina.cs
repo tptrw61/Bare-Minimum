@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Stamina : MonoBehaviour
 {
     public bool DEBUG = false;
+    public bool USE_GAME_OVER = true;
 
     private Vector3 prevPos;
 
@@ -64,8 +66,11 @@ public class Stamina : MonoBehaviour
             tired = true;
             Debug.Log("Out Of Stamina");
         }
+        if ((tired || stressed) && USE_GAME_OVER)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
-
     public void useStamina(float used)
     {
         staminaCurrent -= used;
