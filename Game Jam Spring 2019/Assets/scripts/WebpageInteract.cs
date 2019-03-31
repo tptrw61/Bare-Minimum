@@ -18,7 +18,7 @@ public class WebpageInteract : MonoBehaviour
 
     public void Show()
     {
-        this.targetpos = new Vector3(-9.5f, -.04f, 0f);
+        this.targetpos = new Vector3(-9.3f, -.055f, 0f);
 
     }
 
@@ -36,6 +36,6 @@ public class WebpageInteract : MonoBehaviour
 
     public void Hide()
     {
-        this.targetpos = new Vector3(-9.5f, -9f, 0f);
+        this.targetpos = new Vector3(-9.3f, -9f, 0f);
     }
 }
