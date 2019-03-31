@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 250550526}
   - component: {fileID: 250550528}
   - component: {fileID: 250550525}
+  - component: {fileID: 250550530}
   - component: {fileID: 250550529}
   m_Layer: 0
   m_Name: coffee_mug_0
@@ -225,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c00f03c6ce138843b4c6b8939b9d1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stamina: {fileID: 1829293966}
+  stamina: {fileID: 0}
 --- !u!61 &250550529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -252,6 +253,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &250550530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250550524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c00f03c6ce138843b4c6b8939b9d1c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stamina: {fileID: 1829293966}
 --- !u!1 &340898641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1127,7 @@ MonoBehaviour:
   DEBUG: 0
   staminaDrain: 1
   stressDrain: 1
-  staminaMax: 3000
+  staminaMax: 9000
   staminaCurrent: 0
   stressMax: 3
   stressCurrent: 0

@@ -20,6 +20,6 @@ public class StressBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sr.sprite = sprites[stamina.stressCurrent];
+        sr.sprite = sprites[stamina.stressCurrent == 4 ? 3 : stamina.stressCurrent];
     }
 }

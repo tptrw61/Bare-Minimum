@@ -15,7 +15,7 @@ public class Coffee_interact : MonoBehaviour
 
     void OnMouseDown()
     {
-        stamina.restoreStamina(150f);
+        stamina.restoreStamina(450f);
     }
 
     // Update is called once per frame
