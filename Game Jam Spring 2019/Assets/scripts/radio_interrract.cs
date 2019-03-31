@@ -10,7 +10,6 @@ public class radio_interrract : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        music = GetComponent<AudioSource>();
         on = false;
     }
 
