@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stamina: {fileID: 0}
+  sip: {fileID: 0}
 --- !u!61 &250550529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stamina: {fileID: 1829293966}
+  sip: {fileID: 0}
 --- !u!1 &340898641
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +373,7 @@ GameObject:
   - component: {fileID: 347231006}
   - component: {fileID: 347231005}
   - component: {fileID: 347231007}
+  - component: {fileID: 347231008}
   m_Layer: 0
   m_Name: specky_bear 1
   m_TagString: Untagged
@@ -455,6 +458,23 @@ MonoBehaviour:
   myCamera: {fileID: 519420028}
   distance: 5
   speed: 40
+--- !u!114 &347231008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347231004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e84d50b2393a9d44b001b0bb02352b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: ed68005d991714a12b0829977eb868e0, type: 3}
+  - {fileID: 21300000, guid: 40b4b72bd94ab447e8457bc801c0c796, type: 3}
+  - {fileID: 21300000, guid: 9e5e640690e3143a38455242b4de4c5c, type: 3}
+  stamina: {fileID: 1829293966}
 --- !u!1 &396675263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4e30850d108a947b4a0dfbccdf8dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DEBUG: 0
+  DEBUG: 1
   staminaDrain: 1
   stressDrain: 1
   staminaMax: 9000
