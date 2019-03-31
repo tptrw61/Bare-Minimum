@@ -5,7 +5,7 @@ using UnityEngine;
 public class ComputerInteract : MonoBehaviour
 {
 
-   public Canvas c;
+   public Canvas canvasObject;
 
     public AudioSource beep;
 
@@ -13,14 +13,14 @@ public class ComputerInteract : MonoBehaviour
     void Start()
     {
         beep = GetComponent<AudioSource>();
-        c= GetComponent<Canvas>();
     }
     // Start is called before the first frame update
     // Update is called once per frame
     void OnMouseDown()
     {
         beep.Play();
-        c.enabled=true;
+        canvasObject.gameObject.SetActive(true);
+        ;
     }
 
     // Update is called once per frame
