@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Stamina : MonoBehaviour
 {
-    public bool DEBUG = true;
+    public bool DEBUG = false;
 
     private Vector3 prevPos;
 
-    public float staminaDrain = .125f, stressDrain = 1f;
+    public float staminaDrain = 1f, stressDrain = 1f;
 
-    public float staminaMax = 3000f;
+    public float staminaMax = 9000f;
     public float staminaCurrent;
 
     public int stressMax = 3;
@@ -37,11 +37,11 @@ public class Stamina : MonoBehaviour
         //DEBUG ONLY
         if (DEBUG)
         {
-            if (Input.GetMouseButtonDown(0))
-                    increaseStress();
-            if (Input.GetMouseButtonDown(1))
-                stressCurrent--;
-            if (Input.GetMouseButtonDown(2))
+            if (Input.GetKeyDown(KeyCode.I))
+                increaseStress();
+            if (Input.GetKeyDown(KeyCode.O))
+                decreaseStress();
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 staminaCurrent = staminaMax;
                 stressCurrent = 0;
@@ -52,7 +52,9 @@ public class Stamina : MonoBehaviour
             stressed = false;
         if (staminaCurrent >= 0)
             tired = false;
-        if(stressCurrent > stressMax && !stressed)
+        if (staminaCurrent < 0)
+            staminaCurrent = 0;
+        if (stressCurrent > stressMax && !stressed)
         {
             stressed = true;
             Debug.Log("Stressed Out");
@@ -64,13 +66,38 @@ public class Stamina : MonoBehaviour
         }
     }
 
-    public bool increaseStress()
+    public void useStamina(float used)
+    {
+        staminaCurrent -= used;
+        if (staminaCurrent < 0)
+            staminaCurrent = 0;
+    }
+    public void restoreStamina(float restored)
+    {
+        staminaCurrent += restored;
+        if (staminaCurrent > staminaMax)
+            staminaCurrent = staminaMax;
+    }
+
+    public void increaseStress()
     {
         stressCurrent++;
-        return stressCurrent > stressMax;
+        if (stressCurrent > 4)
+            stressCurrent = 4;
     }
-    public bool isStressedOut()
+    public void decreaseStress()
+    {
+        stressCurrent--;
+        if (stressCurrent < 0)
+            stressCurrent = 0;
+    }
+
+    public bool looseByStress()
     {
         return stressCurrent > stressMax;
+    }
+    public bool looseByStamina()
+    {
+        return staminaCurrent <= 0;
     }
 }
