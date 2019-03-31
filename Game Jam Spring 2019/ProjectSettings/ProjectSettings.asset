@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Game Jam Spring 2019
-  defaultCursor: {fileID: 2800000, guid: 6ceba18ef3e1047d1a9e125221104092, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 018dee886694a9448919ee8e78fd73dc, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
