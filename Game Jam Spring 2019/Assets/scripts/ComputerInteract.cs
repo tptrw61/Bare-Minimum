@@ -20,8 +20,8 @@ public class ComputerInteract : MonoBehaviour
     // Update is called once per frame
     void OnMouseDown()
     {
-        run.StartDialogue();
         beep.Play();
+        run.StartDialogue();
     }
 
     // Update is called once per frame
