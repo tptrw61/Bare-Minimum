@@ -8,7 +8,6 @@ public class ComputerInteract : MonoBehaviour
 
     public DialogueRunner run;
     //private int count =0;
-    public Stamina stamina;
     public MoveBoss boss;
     public fax_interact fax;
     public AudioSource beep;
@@ -22,7 +21,6 @@ public class ComputerInteract : MonoBehaviour
     // Update is called once per frame
     void OnMouseDown()
     {
-        stamina.decreaseStress();
         beep.Play();
         fax.working = false;
         float x = Random.Range(0.0f, 5.0f);
