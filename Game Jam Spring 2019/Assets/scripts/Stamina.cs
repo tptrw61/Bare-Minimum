@@ -54,8 +54,6 @@ public class Stamina : MonoBehaviour
             stressed = false;
         if (staminaCurrent >= 0)
             tired = false;
-        if (staminaCurrent < 0)
-            staminaCurrent = 0;
         if (stressCurrent > stressMax && !stressed)
         {
             stressed = true;
@@ -66,7 +64,7 @@ public class Stamina : MonoBehaviour
             tired = true;
             Debug.Log("Out Of Stamina");
         }
-        if ((tired || stressed) && USE_GAME_OVER)
+        if ((staminaCurrent < 0 || stressed) && USE_GAME_OVER)
         {
             SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
