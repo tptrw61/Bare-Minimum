@@ -146,7 +146,7 @@ MonoBehaviour:
   footsteps: {fileID: 340898645}
   fax: {fileID: 1814425968}
   dialouge: {fileID: 1488163873}
-  computer: {fileID: 0}
+  computer: {fileID: 375055048}
   distance: 5
   time: 20
   speed: 2
@@ -474,11 +474,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192ccc07bd4474138a2c647a037463fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stamina: {fileID: 1829293966}
   boss: {fileID: 340898642}
   fax: {fileID: 1814425968}
   beep: {fileID: 375055049}
   trigger: 0
+  trackTimeWorking: 0
+  noDialogue: 0
+  USE_BOSSTIME: 0
   page: {fileID: 2063622471}
+  startChance: 0
+  deltaChance: 0
+  checkTimeout: 0
+  currentChance: 0
+  chanceTime: 0
+  timeToDestress: 30
+  timeNotWorking: 0
 --- !u!82 &375055049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2023,14 +2034,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4e30850d108a947b4a0dfbccdf8dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  computer: {fileID: 375055048}
+  fax: {fileID: 1814425968}
   DEBUG: 0
   USE_GAME_OVER: 1
   staminaDrain: 1
-  stressDrain: 1
+  stressDrain: 5
   staminaMax: 9000
   staminaCurrent: 0
   stressMax: 3
   stressCurrent: 0
+  workPenalty: 0
+  wpRate: 0.25
+  wpInc: 1
+  wpDec: 3
   tired: 0
   stressed: 0
 --- !u!114 &1829293967
@@ -2181,6 +2198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stamina: {fileID: 1829293966}
   sip: {fileID: 1878264423}
+  sipTimeout: 1
 --- !u!65 &1878264425
 BoxCollider:
   m_ObjectHideFlags: 0
