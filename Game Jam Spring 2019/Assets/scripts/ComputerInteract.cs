@@ -6,7 +6,6 @@ using Yarn.Unity;
 public class ComputerInteract : MonoBehaviour
 {
     //private int count =0;
-    public Stamina stamina;
     public MoveBoss boss;
     public fax_interact fax;
     public AudioSource beep;
@@ -25,10 +24,9 @@ public class ComputerInteract : MonoBehaviour
     {
         beep.Play();
         page.Show();
-        stamina.decreaseStress();
         fax.working = false;
-        float x = Random.Range(0.0f, 5.0f);
-        if( x < 3.0f && !trigger)
+        float x = Random.Range(0.0f, 3.0f);
+        if( x < 2.5f && !trigger)
         {
             trigger = true;
             boss.StartCoroutine(boss.TimerSound(boss.time));

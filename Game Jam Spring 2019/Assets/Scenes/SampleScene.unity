@@ -474,7 +474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192ccc07bd4474138a2c647a037463fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stamina: {fileID: 1829293966}
   boss: {fileID: 340898642}
   fax: {fileID: 1814425968}
   beep: {fileID: 375055049}
@@ -951,7 +950,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e7594ab8d976d76489d39a5d293e1056, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.27
+  m_Volume: 0.67
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2084,7 +2083,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 50eda37dae469b24188e803aba42c64d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

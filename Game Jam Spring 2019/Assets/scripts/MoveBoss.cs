@@ -55,7 +55,7 @@ public class MoveBoss : MonoBehaviour
     {
         yield return new WaitForSeconds(time-5);
         footsteps.Play();
-        StartCoroutine(TimerBoss(2));
+        StartCoroutine(TimerBoss(4));
     }
 
     private IEnumerator TimerBoss(float time)
