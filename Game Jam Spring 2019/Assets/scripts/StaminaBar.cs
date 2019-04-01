@@ -5,10 +5,10 @@ using UnityEngine;
 public class StaminaBar : MonoBehaviour
 {
 
-    public Sprite[] sprites;
+    public Sprite[] sprites = new Sprite[8];
     private SpriteRenderer sr;
 
-    Stamina stamina;
+    public Stamina stamina;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,12 @@ public class StaminaBar : MonoBehaviour
     private int getSpriteIndex()
     {
         //use this to figure out the correct sprite's index
-        return 0;
+        int buffer = (int)(stamina.staminaMax / 16f);
+        int value = (int)((stamina.staminaCurrent + buffer) / (stamina.staminaMax / 8f));
+        if (value < 0)
+            value = 0;
+        if (value > 7)
+            value = 7;
+        return value;
     }
 }
