@@ -20,6 +20,7 @@ public class MoveBoss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Debug.Log(string.Format("Boss.time = {0}", time));
         this.transform.position = Vector3.left * distance;
     }
 
@@ -27,9 +28,11 @@ public class MoveBoss : MonoBehaviour
     {
         this.targetpos = new Vector3(8.6f, .5f, 0f);
         showing = true;
+        computer.trackTimeWorking = computer.noDialogue = false;
         if (!fax.working)
         {
             stress.increaseStress();
+            computer.timeNotWorking = 0;
             dialouge.startNode = "Slacking";
         }
         else
@@ -48,6 +51,8 @@ public class MoveBoss : MonoBehaviour
         {
             Hide();
             computer.trigger = false;
+            computer.trackTimeWorking = computer.noDialogue = true;
+            computer.chanceTime = 0;
         }
     }
     

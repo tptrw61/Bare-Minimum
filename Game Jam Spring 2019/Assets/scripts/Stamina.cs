@@ -5,18 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Stamina : MonoBehaviour
 {
+    public ComputerInteract computer;
+    public fax_interact fax;
+
     public bool DEBUG = false;
     public bool USE_GAME_OVER = true;
 
     private Vector3 prevPos;
 
-    public float staminaDrain = 1f, stressDrain = 1f;
+    public float staminaDrain = 1f, stressDrain = 5f;
 
     public float staminaMax = 9000f;
     public float staminaCurrent;
 
     public int stressMax = 3;
     public int stressCurrent;
+
+    public float workPenalty = 0;
+    public float wpRate = .25f;
+    public float wpInc = 1f;
+    public float wpDec = 3f;
     
     public bool tired = false;
     public bool stressed = false;
@@ -33,8 +41,19 @@ public class Stamina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (fax.working && computer.noDialogue)
+        {
+            workPenalty += Time.deltaTime * wpRate * wpInc;
+        } else if (computer.noDialogue)
+        {
+            workPenalty -= Time.deltaTime * wpRate * wpDec;
+            if (workPenalty < 0)
+                workPenalty = 0;
+        }
+
         Vector3 curPos = Input.mousePosition;
-        staminaCurrent -= (Vector3.Distance(curPos, prevPos)*staminaDrain) + (stressDrain*Time.deltaTime*stressCurrent);
+        if (computer.noDialogue)
+            staminaCurrent -= (Vector3.Distance(curPos, prevPos)*staminaDrain) + (stressDrain*Time.deltaTime*stressCurrent) + (workPenalty*Time.deltaTime);
         prevPos = curPos;
         //DEBUG ONLY
         if (DEBUG)
