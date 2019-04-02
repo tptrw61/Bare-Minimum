@@ -20,7 +20,7 @@ public class Coffee_interact : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (sipTimePassed >= sipTimeout)
+        if (sipTimePassed >= sipTimeout && stamina.computer.noDialogue)
         {
             stamina.restoreStamina(stamina.staminaMax / 8f);
             sipTimePassed = 0;

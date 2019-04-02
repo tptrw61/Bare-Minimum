@@ -40,18 +40,21 @@ public class ComputerInteract : MonoBehaviour
     // Update is called once per frame
     void OnMouseDown()
     {
-        beep.Play();
-        page.Show();
-        //stamina.decreaseStress();
-        fax.working = false;
-        /*----------------------------------- this functionality was moved to update
-        float x = Random.Range(0.0f, 3.0f);
-        if( x < 2.5f && !trigger)
+        if (noDialogue)
         {
-            trigger = true;
-            boss.StartCoroutine(boss.TimerSound(boss.time));
+            beep.Play();
+            page.Show();
+            //stamina.decreaseStress();
+            fax.working = false;
+            /*----------------------------------- this functionality was moved to update
+            float x = Random.Range(0.0f, 3.0f);
+            if( x < 2.5f && !trigger)
+            {
+                trigger = true;
+                boss.StartCoroutine(boss.TimerSound(boss.time));
+            }
+            // */
         }
-        // */
     }
 
     // Update is called once per frame

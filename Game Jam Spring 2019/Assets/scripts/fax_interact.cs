@@ -9,6 +9,7 @@ public class fax_interact : MonoBehaviour
     public AudioSource print;
     public bool working;
     public Paper_Interact paper;
+    public ComputerInteract computer;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +19,13 @@ public class fax_interact : MonoBehaviour
 
     void OnMouseDown()
     {
-        working = true;
-        print.Play();
-        printer.Play("");
-        paper.Show();
+        if (computer.noDialogue)
+        {
+            working = true;
+            print.Play();
+            printer.Play("");
+            paper.Show();
+        }
     }
 
     // Update is called once per frame
